@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos in HTML5</title>
+</head>
+<body>
+    <h1>Inserting locally hosted videos</h1> <!-- AVOID LOCALLY HOSTED VIDEOS -->
+    <p>This video is hosted in my own server</p>
+
+    <video width="700" poster="images/hades.jpg" controls>
+        <source src="media/Hades - v1.0 Launch Trailer.mp4" type="video/mp4">
+        <p>Your browser can't play the video.</p>
+    </video>
+
+    <h1>Inserting videos from Youtube</h1>
+    <iframe width="700" height="380" src="https://www.youtube.com/embed/l-iHDj3EwdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h1>Inserting videos from Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/779374925?h=b169b31ca2&title=0&byline=0&portrait=0" width="700" height="394" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible image</title>
+</head>
+<body>
+    <h1>Flexible image</h1>
+    <p>Are you seeing the full image? Try increasing the size of your window for the best experience &#x1F92F;</p>
+
+    <picture>
+        <source media="(max-width: 775px)" srcset="images/s-landscape.png" type="image/png">
+        <source media="(max-width: 1250px)" srcset="images/m-landscape.png" type="image/png">
+        <img src="images/l-landscape.png" alt="full landscape">
+    </picture>
+</body>
+</html>

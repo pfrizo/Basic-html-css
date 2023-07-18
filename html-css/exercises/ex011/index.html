@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias in HTML5</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dynamic Images</h1>
+    <p>Try opening that site on several different devices or simply increase and decrease the size of your browser</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/s-photo.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/m-photo.png" type="image/png">
+        <img src="images/l-photo.png" alt="Flexible image">
+    </picture>
+
+    <h1>Playing audios</h1>
+    <p>Let's learn how to play audios in HTML5</p>
+    <audio preload="metadata" autoplay controls loop> <!-- Youtube Audio Library -->
+        <source src="medias/In Eternity We'll Meet - Aakash Gandhi.mp3" type="audio/mpeg">
+        <source src="medias/In Eternity We'll Meet - Aakash Gandhi.ogg" type="audio/ogg">
+        <source src="medias/In Eternity We'll Meet - Aakash Gandhi.wav" type="audio/wav"> <!-- AVOID -->
+        <p>Unfortunately your browser can't play the audio. <a href="medias/In Eternity We'll Meet - Aakash Gandhi.mp3">Click here to download the mp3 file</a></p>
+    </audio>
+</body>
+</html>
